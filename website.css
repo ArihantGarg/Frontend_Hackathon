@@ -75,3 +75,64 @@ nav :last-child{
     padding-right: 15px;
 }
 
+/* Video Player and Caption */
+.video-container {
+    display: flex;
+    align-items: center; /* Center vertically within parent */
+}
+
+.VideoPlayer,
+.Caption {
+    flex: 1;
+    padding: 20px;
+}
+
+.Caption p {
+    font-size: 40px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Initial Caption */
+.initial-caption {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.initial-caption h1 {
+    font-size: 48px;
+    color: #333;
+    animation: loopText 8s linear infinite; 
+}
+
+@keyframes loopText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Stylish Caption */
+.stylish-caption {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+.stylish-caption h1 {
+    font-size: 36px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
