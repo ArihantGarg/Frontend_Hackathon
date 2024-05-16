@@ -105,7 +105,7 @@ video {
     word-spacing: 20px;
 }
 
-.initial-caption h1 {
+.initial-caption p {
     font-size: 64px;
     color: #333;
     animation: loopText 10s linear infinite;
@@ -119,6 +119,20 @@ video {
         transform: translateX(-125%);
     }
 }
+
+#scrollbutton{
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    border-radius: 30px;
+    margin-left: 60px;
+}
+#scrollbutton:hover{
+    background-color: white;
+    color:black;
+}
+
 
 /* Stylish Caption */
 .stylish-caption {
