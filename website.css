@@ -35,11 +35,11 @@ body {
 }
 
 /* Navbar */
-nav{
+nav {
     font-size: large;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -47,11 +47,11 @@ nav ul{
     align-items: center;
 }
 
-nav li{
+nav li {
     height: 100px;
 }
 
-nav a{
+nav a {
     height: 100%;
     padding: 0 15px;
     text-decoration: none;
@@ -60,25 +60,25 @@ nav a{
     color: black;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #f0f0f0;
     color: gray;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
     padding-left: 15px;
     font-size: 30px;
 }
 
-nav :last-child{
+nav :last-child {
     padding-right: 15px;
 }
 
 /* Video Player and Caption */
 .video-container {
     display: flex;
-    align-items: center; /* Center vertically within parent */
+    align-items: center;
 }
 
 .VideoPlayer,
@@ -101,21 +101,22 @@ video {
 /* Initial Caption */
 .initial-caption {
     text-align: center;
-    padding: 25px 0;
+    padding: 50px 0;
+    word-spacing: 20px;
 }
 
 .initial-caption h1 {
-    font-size: 48px;
+    font-size: 64px;
     color: #333;
-    animation: loopText 8s linear infinite; 
+    animation: loopText 10s linear infinite;
 }
 
 @keyframes loopText {
     0% {
-        transform: translateX(100%);
+        transform: translateX(125%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-125%);
     }
 }
 
@@ -130,9 +131,10 @@ video {
     font-size: 36px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     line-height: 1.5;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     font-style: italic;
+    word-spacing: 4px;
 }
